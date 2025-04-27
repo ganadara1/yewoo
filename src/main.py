@@ -176,21 +176,91 @@ def main():
 
     # 스물네 번째 맵 생성 (map24)
     npc_map24 = NPC(512, 384, "assets/images/npc_map24.png", scale=0.2)
-    portal_to_map23 = Portal(50, 400, 50, 50, "map23")
-    map24 = Map("assets/images/map24_background.png", [portal_to_map23], [npc_map24], description="10월 9일 몽마르뜨 공원")
+    portal_to_map23 = Portal(50, 400, 50, 50, "map23")  # map24에서 map23로 이동
+    portal_to_map25 = Portal(900, 400, 50, 50, "map25")  # map24에서 map25로 이동 추가
+    map24 = Map("assets/images/map24_background.png", [portal_to_map23, portal_to_map25], [npc_map24], description="10월 9일 몽마르뜨 공원")
     map24.interaction_image = pygame.image.load("assets/images/memory_map24.png")
 
+    # 스물다섯 번째 맵 생성 (map25)
+    npc_map25 = NPC(512, 384, "assets/images/npc_map25.png", scale=0.2)
+    portal_to_map24 = Portal(50, 400, 50, 50, "map24")  # map25에서 map24로 이동
+    portal_to_map26 = Portal(900, 400, 50, 50, "map26")  # map25에서 map26로 이동
+    map25 = Map("assets/images/map25_background.png", [portal_to_map24, portal_to_map26], [npc_map25], description="10월 15일 서울숲")
+    map25.interaction_image = pygame.image.load("assets/images/memory_map25.png")
+
+    # 스물여섯 번째 맵 생성 (map26)
+    npc_map26 = NPC(512, 384, "assets/images/npc_map26.png", scale=0.2)
+    portal_to_map25 = Portal(50, 400, 50, 50, "map25")  # map26에서 map25로 이동
+    portal_to_map27 = Portal(900, 400, 50, 50, "map27")  # map26에서 map27로 이동
+    map26 = Map("assets/images/map26_background.png", [portal_to_map25, portal_to_map27], [npc_map26], description="10월 20일 남산타워")
+    map26.interaction_image = pygame.image.load("assets/images/memory_map26.png")
+
+    # 스물일곱 번째 맵 생성 (map27)
+    npc_map27 = NPC(512, 384, "assets/images/npc_map27.png", scale=0.2)
+    portal_to_map26 = Portal(50, 400, 50, 50, "map26")  # map27에서 map26로 이동
+    portal_to_map28 = Portal(900, 400, 50, 50, "map28")  # map27에서 map28로 이동
+    map27 = Map("assets/images/map27_background.png", [portal_to_map26, portal_to_map28], [npc_map27], description="10월 25일 한강공원")
+    map27.interaction_image = pygame.image.load("assets/images/memory_map27.png")
+
+    # 스물여덟 번째 맵 생성 (map28)
+    npc_map28 = NPC(512, 384, "assets/images/npc_map28.png", scale=0.2)
+    portal_to_map27 = Portal(50, 400, 50, 50, "map27")  # map28에서 map27로 이동
+    portal_to_map29 = Portal(900, 400, 50, 50, "map29")  # map28에서 map29로 이동
+    map28 = Map("assets/images/map28_background.png", [portal_to_map27, portal_to_map29], [npc_map28], description="10월 30일 홍대거리")
+    map28.interaction_image = pygame.image.load("assets/images/memory_map28.png")
+
+    # 스물아홉 번째 맵 생성 (map29)
+    npc_map29 = NPC(512, 384, "assets/images/npc_map29.png", scale=0.2)
+    portal_to_map28 = Portal(50, 400, 50, 50, "map28")  # map29에서 map28로 이동
+    portal_to_map30 = Portal(900, 400, 50, 50, "map30")  # map29에서 map30로 이동
+    map29 = Map("assets/images/map29_background.png", [portal_to_map28, portal_to_map30], [npc_map29], description="11월 5일 대학로")
+    map29.interaction_image = pygame.image.load("assets/images/memory_map29.png")
+
+    # 서른 번째 맵 생성 (map30)
+    npc_map30 = NPC(512, 384, "assets/images/npc_map30.png", scale=0.2)
+    portal_to_map29 = Portal(50, 400, 50, 50, "map29")  # map30에서 map29로 이동
+    portal_to_map31 = Portal(900, 400, 50, 50, "map31")  # map30에서 map31로 이동
+    map30 = Map("assets/images/map30_background.png", [portal_to_map29, portal_to_map31], [npc_map30], description="11월 10일 서촌")
+    map30.interaction_image = pygame.image.load("assets/images/memory_map30.png")
+
+    # 서른한 번째 맵 생성 (map31)
+    npc_map31 = NPC(512, 384, "assets/images/npc_map31.png", scale=0.2)
+    portal_to_map30 = Portal(50, 400, 50, 50, "map30")  # map31에서 map30로 이동
+    portal_to_map32 = Portal(900, 400, 50, 50, "map32")  # map31에서 map32로 이동
+    map31 = Map("assets/images/map31_background.png", [portal_to_map30, portal_to_map32], [npc_map31], description="11월 15일 이태원")
+    map31.interaction_image = pygame.image.load("assets/images/memory_map31.png")
+
+    # 서른두 번째 맵 생성 (map32)
+    npc_map32 = NPC(512, 384, "assets/images/npc_map32.png", scale=0.2)
+    portal_to_map31 = Portal(50, 400, 50, 50, "map31")  # map32에서 map31로 이동
+    portal_to_map33 = Portal(900, 400, 50, 50, "map33")  # map32에서 map33로 이동
+    map32 = Map("assets/images/map32_background.png", [portal_to_map31, portal_to_map33], [npc_map32], description="11월 20일 명동")
+    map32.interaction_image = pygame.image.load("assets/images/memory_map32.png")
+
+    # 서른세 번째 맵 생성 (map33)
+    npc_map33 = NPC(512, 384, "assets/images/npc_map33.png", scale=0.2)
+    portal_to_map32 = Portal(50, 400, 50, 50, "map32")  # map33에서 map32로 이동
+    portal_to_map34 = Portal(900, 400, 50, 50, "map34")  # map33에서 map34로 이동
+    map33 = Map("assets/images/map33_background.png", [portal_to_map32, portal_to_map34], [npc_map33], description="11월 25일 낙산공원")
+    map33.interaction_image = pygame.image.load("assets/images/memory_map33.png")
+
+    # 서른네 번째 맵 생성 (map34)
+    npc_map34 = NPC(512, 384, "assets/images/npc_map34.png", scale=0.2)
+    portal_to_map33 = Portal(50, 400, 50, 50, "map33")  # map34에서 map33로 이동
+    map34 = Map("assets/images/map34_background.png", [portal_to_map33], [npc_map34], description="11월 30일 한강 야경")
+    map34.interaction_image = pygame.image.load("assets/images/memory_map34.png")
+
     # 모든 맵 등록
-    scene_manager.add_scene("map1", map1)
+    scene_manager.add_scene("map1", map1)  # map1 등록 추가
     scene_manager.add_scene("map2", map2)
     scene_manager.add_scene("map3", map3)
     scene_manager.add_scene("map4", map4)
     scene_manager.add_scene("map5", map5)
     scene_manager.add_scene("map6", map6)
-    scene_manager.add_scene("map7", map7)  # map7 등록 추가
-    scene_manager.add_scene("map8", map8)  # map8 등록 추가
-    scene_manager.add_scene("map9", map9)  # map9 등록 추가
-    scene_manager.add_scene("map10", map10)  # map10 등록 추가
+    scene_manager.add_scene("map7", map7)
+    scene_manager.add_scene("map8", map8)
+    scene_manager.add_scene("map9", map9)
+    scene_manager.add_scene("map10", map10)
     scene_manager.add_scene("map11", map11)
     scene_manager.add_scene("map12", map12)
     scene_manager.add_scene("map13", map13)
@@ -205,6 +275,16 @@ def main():
     scene_manager.add_scene("map22", map22)
     scene_manager.add_scene("map23", map23)
     scene_manager.add_scene("map24", map24)
+    scene_manager.add_scene("map25", map25)
+    scene_manager.add_scene("map26", map26)
+    scene_manager.add_scene("map27", map27)
+    scene_manager.add_scene("map28", map28)
+    scene_manager.add_scene("map29", map29)
+    scene_manager.add_scene("map30", map30)
+    scene_manager.add_scene("map31", map31)
+    scene_manager.add_scene("map32", map32)
+    scene_manager.add_scene("map33", map33)
+    scene_manager.add_scene("map34", map34)
 
     # 시작 맵 설정
     scene_manager.set_scene("map1")  # map1에서 시작
